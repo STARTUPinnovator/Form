@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-Form</title>
+    <!--<link rel="stylesheet" href="Index/3d-form.css">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="form-section" method="post">
+        <div class="form-body container ">
+            <div class="row ml-2">
+                <form action="Index/databases/3d-print.php">
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <label for="name">Name :</label>
+                        <input type="text" name="name" placeholder="Enter your name" maxlength="30" required />
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <label for="email">Email :</label>
+                        <input type="Email" name="email" placeholder="Enter your email" required />
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <label for="number">Phone :</label>
+                        <input type="text" name="number" placeholder="+91 your number" maxlength="10" required />
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <label for="title">Project Title :</label>
+                        <input type="text" name="title" placeholder="Title of project" required>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-8 p-3">
+                        <label for="description">Description :</label>
+                        <textarea rows="6" cols="30" name="description" placeholder="Short Description"
+                            maxlength="200" required></textarea>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <label for="file">Upload the File :</label>
+                        <input type="file" accept=".pdf,.jpg,.jpeg,.png,.docx,.ppt" name="file" multiple required />
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-8 p-3">
+                        <label for="requirements">Additional Requirements :</label>
+                        <div>
+                            <input type="checkbox" name="check"> PPT
+                        </div>
+                        <div>
+                            <input type="checkbox" name="check"> Project report
+                        </div>
+                        <div>
+                            <input type="checkbox" name="check"> Conference paper
+                        </div>
+                        <div>
+                            <input type="checkbox" name="check"> Require Courier
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <label for="date">Deadline :</label>
+                        <input type="date" name="date" placeholder="Deadline" required>
+                    </div>
+
+                    <div class="col-12 p-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
