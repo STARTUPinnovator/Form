@@ -24,72 +24,84 @@
 
 <body>
     <section class="form-section" method="post">
-        <div class="form-body container bg-container1">
-            <div class="row ml-2 bg-container">
+        <div class="form-body bg-container">
+            <div class="row ml-2 container " style="display: flex; justify-content: center;">
                 <form action="Index/databases/3d-print.php">
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3 ">
                         <label for="name" class="heading">Name :</label>
-                        <input class="button-style2" style="color: white;" type="text" name="name" placeholder="Enter your name" maxlength="30" required />
+                        <input class="button-style2" style=" width:30vw; border-color:white; color:white;" type="text" name="name" placeholder="Enter your name" maxlength="30" required />
                     </div>
 
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3 ">
                         <label for="email" class="heading">Email :</label>
                         <input 
-                       class="button-style2" style="color: white;" type="Email" name="email" placeholder="Enter your email" required />
+                       class="button-style2" style="width:30vw;border-color:white; color:white;" type="Email" name="email" placeholder="Enter your email" required />
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3 ">
                         <label for="number" class="heading">Phone :</label>
-                        <input class="button-style2" style="color: white;" type="text" name="number" placeholder="+91 your number" maxlength="10" required />
+                        <input class="button-style2" style=" width:30vw;border-color:white; color:white;" type="text" name="number" placeholder="+91 your number" maxlength="10" required />
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-4 p-3">
                         <label for="title" class="heading">Project Title :</label>
-                        <input class="button-style2" style="color: white;" type="text" name="title" placeholder="Title of project" required>
+                        <input class="button-style2" style=" width:30vw; border-color:white; color:white;" type="text" name="title" placeholder="Title of project" required>
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-8 p-3">
                         <label for="description" class="heading">Description :</label>
-                        <textarea class="button-style2" style="color: white;" rows="6" cols="30" name="description" placeholder="Short Description"
+                        <textarea class="button-style2" style="width:30vw; border-color:white; color:white;" rows="6" cols="30" name="description" placeholder="Short Description"
                             maxlength="200" required></textarea>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3 ">
                         <label for="file" class="heading">Upload the File :</label>
-                        <input class="button-style2" style="color: white;" type="file" accept=".pdf,.jpg,.jpeg,.png,.docx,.ppt" name="file" multiple required />
+                        <input class="button-style2" style=" border-color:white; color:white;" type="file" accept=".pdf,.jpg,.jpeg,.png,.docx,.ppt" name="file" multiple required />
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-8 p-3">
                         <label for="requirements" class="heading">Additional Requirements :</label>
-                        <div>
+                        <div >
                             <input class="button-style2" style="color:black;"  type="checkbox" name="check"> 
-                            <label for="check" style="color:black; font-weight: normal;">PPT</label>
+                            <label for="check" style="border-color:white; color:white;">PPT</label>
                         </div>
 
-                        <div>
+                        <div >
                             <input class="button-style2" style="color: black; " type="checkbox" name="check"> 
-                            <label for="check" style="color:black; font-weight:normal;">Project report</label>
+                            <label for="check" style="border-color:white; color:white;">Project report</label>
                             
                         </div>
-                        <div>
+                        <div >
                             <input class="button-style2" style="color: black; " type="checkbox" name="check">
-                            <label for="check" style="color:black; font-weight:normal;">Conference paper</label>
+                            <label for="check" style="border-color:white; color:white;">Conference paper</label>
                              
                         </div>
-                        <div>
+                        <div >
                             <input type="checkbox" name="check"> 
-                            <label for="check" style="color:black; font-weight:normal;">Require Courier</label>
+                            <label for="check" style="border-color:white; color:white;">Require Courier</label>
                         </div>
                     </div>
+
+                    <style>
+                        input[type="date"] {
+                            color: black;
+                            background-color: white;
+                            border: 1px solid white;
+                            padding: 5px;
+                            border-radius: 5px;
+                        }
+
+                    </style>
 
                     <div class="col-sm-12 col-md-6 col-lg-4 p-3">
                         <label for="date" class="heading">Deadline :</label>
-                        <input class="button-style2" style="color: black;" type="date" name="date style=color:black;" placeholder="Deadline" required>
+                        <input class="button-style2" style="border-color:white; color:black;" type="date" name="date" placeholder="Deadline" required>
                     </div>
 
-                    <div class="col-12 p-3">
+
+                    <div class="col-12 p-3 sub-container">
                         <button type="submit" class="button-style">Submit</button>
                     </div>
                 </form>
