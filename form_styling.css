@@ -1,32 +1,65 @@
 .bg-container{
-  background-color:#c7dcfc;
+  background-image:url("https://img.freepik.com/premium-photo/high-angle-view-telephone-booth_1048944-3149334.jpg?size=626&ext=jpg&ga=GA1.1.1877632894.1706687303&semt=ais");
   background-size: cover;
-  height: 250vh;
+  height: 180vh;
+  object-fit:cover;  
+  padding-left:25% ;
+  padding-right:25%;
+  transition: background-image 0.5s ease;
 }
 
+.container{
+  background-color: black;
+  opacity:0.8;
+  height: 180vh;
+  object-fit:cover;
+  background-size: cover;
+
+}
+
+
 .heading {
-    color:Black;
+    color:white;
     font-size: 22px;
     font-family: Bree Serif;
     text-align: center;
     font-weight:bold;
+  
   }
 
   .button-style {
-    background-color:#14435c;
+    background-color: white;
     border-radius: 10px;
-    color:white;
+    color:black;
     margine-top:30px;
+    width:100px;
+    padding:7px;
+    font-size:18px;
     
 }
 
 .button-style2 {
-    background-color:#14435c;
+    background-color:transparent;
     border-radius: 10px;
-    color: black;
+    color:white;
     border-color:white;
     font-weight: bold;
     padding:5px;
+    border-width:3px;
     text-align: center;
     
+}
+
+::placeholder {
+  color: white;
+  font-weight: normal;
+
+}
+
+.bg-container:hover {
+  /* Change the background image on hover */
+  background-image: url("https://img.freepik.com/free-vector/gray-geometric-shapes-black-background-vector_53876-171404.jpg?w=740&t=st=1706709738~exp=1706710338~hmac=65a3191eebd8437718e6a4b0a1a516effd9fa082069140a394a50b016c59f526");
+  height: 180vh;
+  object-fit:cover;
+  background-size: cover;
 }
