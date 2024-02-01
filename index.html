@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3d-Form</title>
-    <!--<link rel="stylesheet" href="Index/3d-form.css">-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="form_styling.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
@@ -20,98 +19,105 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <style>
+        /* Custom Styles */
+        input[type="date"] {
+            color: black;
+            background-color: white;
+            border: 1px solid white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            
+            .heading {
+                font-size: 20px;
+            }
+
+            .form-body {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <section class="form-section" method="post">
 
-        <div style="display: flex; justify-content:center;">
+        <div style="display: flex; justify-content: center;">
             <div class="header">
-                <div class="row" style="display: flex; justify-content:center;">
+                <div class="row" style="display: flex; justify-content: center;">
                     <img src="https://www.techazsure.com/Free.jpg" style="height:55px; width:55px; padding-top:10px; padding-right:15px;">
                     <h1 class="heading" style="font-size:45px; color:white;">TECHAZURE</h1>
                 </div>
                 <p style="color:white;">Seamlessly Transforming Requirements into Reality </p>
             </div>
-
         </div>
 
         <div class="form-body bg-container">
             <div class="row ml-2 container " style="display: flex; justify-content: center;">
                 <form action="Index/databases/3d-print.php">
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3 ">
+                    <div class="col-12 p-3 ">
                         <label for="name" class="heading">Name :</label>
-                        <input class="button-style2" style=" width:30vw; border-color:white; color:white;" type="text" name="name" placeholder="Enter your name" maxlength="30" required />
+                        <input class="button-style2" style="width:100%; border-color:white; color:white;" type="text" name="name" placeholder="Enter your name" maxlength="30" required />
                     </div>
 
-
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3 ">
+                    <div class="col-12 p-3 ">
                         <label for="email" class="heading">Email :</label>
-                        <input 
-                       class="button-style2" style="width:30vw;border-color:white; color:white;" type="Email" name="email" placeholder="Enter your email" required />
+                        <input class="button-style2" style="width:100%; border-color:white; color:white;" type="email" name="email" placeholder="Enter your email" required />
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3 ">
+                    <div class="col-12 p-3 ">
                         <label for="number" class="heading">Phone :</label>
-                        <input class="button-style2" style=" width:30vw;border-color:white; color:white;" type="text" name="number" placeholder="+91 your number" maxlength="10" required />
+                        <input class="button-style2" style="width:100%; border-color:white; color:white;" type="text" name="number" placeholder="+91 your number" maxlength="10" required />
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <div class="col-12 p-3">
                         <label for="title" class="heading">Project Title :</label>
-                        <input class="button-style2" style=" width:30vw; border-color:white; color:white;" type="text" name="title" placeholder="Title of project" required>
+                        <input class="button-style2" style="width:100%; border-color:white; color:white;" type="text" name="title" placeholder="Title of project" required>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-8 p-3">
+                    <div class="col-12 p-3">
                         <label for="description" class="heading">Description :</label>
-                        <textarea class="button-style2" style="width:30vw; border-color:white; color:white;" rows="6" cols="30" name="description" placeholder="Short Description"
+                        <textarea class="button-style2" style="width:100%; border-color:white; color:white;" rows="6" cols="30" name="description" placeholder="Short Description"
                             maxlength="200" required></textarea>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3 ">
+                    <div class="col-12 p-3 ">
                         <label for="file" class="heading">Upload the File :</label>
-                        <input class="button-style2" style=" border-color:white; color:white;" type="file" accept=".pdf,.jpg,.jpeg,.png,.docx,.ppt" name="file" multiple required />
+                        <input class="button-style2" style="width:100%; border-color:white; color:white;" type="file" accept=".pdf,.jpg,.jpeg,.png,.docx,.ppt" name="file" multiple required />
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-8 p-3">
+                    <div class="col-12 p-3">
                         <label for="requirements" class="heading">Additional Requirements :</label>
-                        <div >
+                        <div>
                             <input class="button-style2" style="color:black;"  type="checkbox" name="check"> 
                             <label for="check" style="border-color:white; color:white;">PPT</label>
                         </div>
 
-                        <div >
+                        <div>
                             <input class="button-style2" style="color: black; " type="checkbox" name="check"> 
                             <label for="check" style="border-color:white; color:white;">Project report</label>
-                            
                         </div>
-                        <div >
+
+                        <div>
                             <input class="button-style2" style="color: black; " type="checkbox" name="check">
                             <label for="check" style="border-color:white; color:white;">Conference paper</label>
-                             
                         </div>
-                        <div >
-                            <input type="checkbox" name="check"> 
+
+                        <div>
+                            <input class="button-style2" type="checkbox" name="check"> 
                             <label for="check" style="border-color:white; color:white;">Require Courier</label>
                         </div>
                     </div>
 
-                    <style>
-                        input[type="date"] {
-                            color: black;
-                            background-color: white;
-                            border: 1px solid white;
-                            padding: 5px;
-                            border-radius: 5px;
-                        }
-
-                    </style>
-
-                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                    <div class="col-12 p-3">
                         <label for="date" class="heading">Deadline :</label>
                         <input class="button-style2" style="border-color:white; color:black;" type="date" name="date" placeholder="Deadline" required>
                     </div>
-
 
                     <div class="col-12 p-3 sub-container">
                         <button type="submit" class="button-style">Submit</button>
@@ -122,20 +128,20 @@
         </div>
 
         <div class="footer" style="display: flex; flex-direction: column; align-items: center; padding-top: 15px;">
-    <div class="row" style="display: flex; flex-direction: row; align-items: center;">
-        <div class="social-links" style="display: flex; justify-content: center;">
-            <a href="https://www.facebook.com/profile.php?id=61552895274482"><i class="fa fa-facebook" data-sr-id="22"></i></a>
-            <a href="https://instagram.com/techazsure"><i class="fa fa-instagram" data-sr-id="23"></i></a>
-            <a href="https://twitter.com/TechAZsure"><i class="fa fa-twitter" data-sr-id="24"></i></a>
-            <a href="https://www.youtube.com/@Real-TimeProjects"><i class="fa fa-youtube-play" data-sr-id="25"></i></a>
-            <a href="https://github.com/TechAZsure"><i class="fa fa-github" data-sr-id="26"></i></a>
-            <a href="https://www.linkedin.com/in/shaik-althaf-baa96a229"><i class="fa fa-linkedin" data-sr-id="27"></i></a>
-            <a href="https://whatsapp.com/channel/0029VaBPIWTDTkK3r4yXAk0U"><i class="fa fa-whatsapp" data-sr-id="28"></i></a>
+            <div class="row" style="display: flex; flex-direction: row; align-items: center;">
+                <div class="social-links" style="display: flex; justify-content: center;">
+                    <a href="https://www.facebook.com/profile.php?id=61552895274482"><i class="fa fa-facebook" data-sr-id="22"></i></a>
+                    <a href="https://instagram.com/techazsure"><i class="fa fa-instagram" data-sr-id="23"></i></a>
+                    <a href="https://twitter.com/TechAZsure"><i class="fa fa-twitter" data-sr-id="24"></i></a>
+                    <a href="https://www.youtube.com/@Real-TimeProjects"><i class="fa fa-youtube-play" data-sr-id="25"></i></a>
+                    <a href="https://github.com/TechAZsure"><i class="fa fa-github" data-sr-id="26"></i></a>
+                    <a href="https://www.linkedin.com/in/shaik-althaf-baa96a229"><i class="fa fa-linkedin" data-sr-id="27"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaBPIWTDTkK3r4yXAk0U"><i class="fa fa-whatsapp" data-sr-id="28"></i></a>
+                </div>
+                <hr>
+            </div>
+            <p>Copyright @ 2024 TechazSure. All rights reserved</p>
         </div>
-        <hr>
-    </div>
-    <p>Copyright @ 2024 TechazSure. All rights reserved</p>
-</div>
 
     </section>
 </body>
