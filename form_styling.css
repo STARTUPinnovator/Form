@@ -1,21 +1,50 @@
-.bg-container{
-  background-image:url("https://img.freepik.com/premium-photo/high-angle-view-telephone-booth_1048944-3149334.jpg?size=626&ext=jpg&ga=GA1.1.1877632894.1706687303&semt=ais");
+.bg-container {
+  background-image: url("https://img.freepik.com/premium-photo/high-angle-view-telephone-booth_1048944-3149334.jpg?size=626&ext=jpg&ga=GA1.1.1877632894.1706687303&semt=ais");
   background-size: cover;
-  height: 200vh;
-  object-fit:cover;  
-  padding-left:20% ;
-  padding-right:20%;
+  object-fit:cover;
+  height: 190vh;
+  object-fit: cover;
+  padding-left: 20%;
+  padding-right: 20%;
   transition: background-image 0.5s ease;
 }
 
-.container{
+.container {
   background-color: black;
-  opacity:0.8;
-  height: 190vh;
-  object-fit:cover;
+  opacity: 0.8;
+  height: auto;
+  object-fit: cover;
   background-size: cover;
-
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  color: black;
+  padding: 5px;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+  .bg-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container {
+    height: auto; /* Adjusted height for mobile view */
+    padding-top: 40px; /* Added padding to push content below the header */
+    padding-bottom: 40px; /* Added padding to provide space for the footer */
+  }
+
+  .footer {
+    height: auto; /* Adjusted height for mobile view */
+    padding: 10px;
+  }
+}
+
 
 
 .heading {
@@ -85,15 +114,6 @@ p {
     text-align:center;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color:whitesmoke; 
-    color: black; 
-    padding:5px;
-    height:14%;
-}
 
 .header{
   height:25%;
